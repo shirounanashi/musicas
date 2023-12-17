@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f1f1f1;
+}
+
+header{
+    width: 100vw;
+    height: 50px;
+    background: #021002;
+    color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h3{
+    font-size: 15px;
+    max-width: 170px;
+}
+
+header div{
+    display: flex;
+}
+
+header div a{
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    width: 20px;
+}
+
+main img{
+    width: 100vw;
+}
+
+main div{
+    display: flex;
+    justify-content: center;
+}
+
+#fileTable {
+    border-collapse: collapse;
+    width: 80%;
+}
+#fileTable th, #fileTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+#fileTable th {
+    background-color: #f2f2f2;
+}
+
+#fileList tr td:last-child a{
+    background: #021002;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+footer{
+    background: #021002;
+    color: #FFFFFF;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
