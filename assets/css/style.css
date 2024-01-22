@@ -2,6 +2,13 @@
     .mimeType {
         display: none;
     }
+    .mobile {
+        display: none;
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        background-color: #f2f2f2;
+    }
 }
 
 *{
