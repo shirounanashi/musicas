@@ -41,7 +41,7 @@ window.onload = function () {
                 row.innerHTML = `
                     <td>${file.name}</td>
                     <td>${file.size ? formatSize(file.size) : ''}</td>
-                    <td>${file.mimeType}</td>
+                    <td class="mimeType">${file.mimeType}</td>
                     <td>${linkElement}</td>
                 `;
             });
@@ -108,7 +108,7 @@ function openFolder(folderId, folderName) {
                 row.innerHTML = `
                     <td>${file.name}</td>
                     <td>${file.size ? formatSize(file.size) : ''}</td>
-                    <td>${file.mimeType}</td>
+                    <td class="mimeType">${file.mimeType}</td>
                     <td>${linkElement}</td>
                 `;
             });
