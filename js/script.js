@@ -24,7 +24,7 @@ window.onload = function () {
         .then(response => response.json())
         .then(data => {
             const fileList = document.getElementById('fileList');
-            data.files.sort((a, b) => a.name.localeCompare(b.name, undefined, {numeric: true}));
+            data.files.sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }));
             data.files.forEach(file => {
                 const isFolder = file.mimeType === 'application/vnd.google-apps.folder';
                 const row = fileList.insertRow();
@@ -63,7 +63,7 @@ function openFolder(folderId, folderName) {
             const fileList = document.getElementById('fileList');
             fileList.innerHTML = ''; // Limpa a lista de arquivos atual
 
-            data.files.sort((a, b) => a.name.localeCompare(b.name, undefined, {numeric: true}));
+            data.files.sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }));
 
             // Adiciona um botão de voltar
             if (folderStack.length > 0) {
@@ -84,8 +84,17 @@ function openFolder(folderId, folderName) {
                 // Adiciona o botão de voltar a uma nova linha na tabela
                 const backRow = fileList.insertRow();
                 backRow.insertCell().innerHTML = '<b>Voltar</b>';
-                for (let i = 0; i < 2; i++) {
+
+                let isMobile = window.matchMedia("only screen and (max-width: 600px)").matches;
+
+                if (isMobile) {
+                    // Se for um celular, insira apenas uma célula
                     backRow.insertCell();
+                } else {
+                    // Se não for um celular, insira duas células
+                    for (let i = 0; i < 2; i++) {
+                        backRow.insertCell();
+                    }
                 }
 
                 const backCell = backRow.insertCell();
