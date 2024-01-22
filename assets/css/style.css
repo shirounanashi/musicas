@@ -59,12 +59,14 @@ main div{
     background-color: #f2f2f2;
 }
 
-#fileList tr td:last-child a{
+#fileList tr td:last-child a, .back-button{
+    font-family: 'Montserrat', sans-serif;
     background: #021002;
     color: #FFFFFF;
     text-decoration: none;
     padding: 3px;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 footer{
