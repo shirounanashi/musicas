@@ -8,6 +8,9 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header{
@@ -70,6 +73,7 @@ main div{
 }
 
 footer{
+    margin-top: auto;
     background: #021002;
     color: #FFFFFF;
     width: 100vw;
@@ -77,6 +81,4 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    bottom: 0;
 }
