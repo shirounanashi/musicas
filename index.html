@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nanashi A.I. Covers</title>
-        <link rel="shortcut icon" href="assets/img/icone.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="assets/css/style.css">
-        <script src="js/script.js"></script>
-    </head>
 
-    <body>
-        <header>
-            <h3>Minhas Redes Sociais</h3>
-            <div>
-                <a href="https://www.youtube.com/@NanashiG" target="_blank">
-                    <img width="20" height="20" src="https://cdn-icons-png.flaticon.com/512/4494/4494467.png">
-                </a>
-                <a href="https://www.instagram.com/nanashigc/" target="_blank">
-                    <img width="20" height="20" src="https://cdn-icons-png.flaticon.com/512/4494/4494468.png">
-                </a>
-                <a href="https://twitter.com/shirounanashi" target="_blank">
-                    <img width="20" height="20" src="https://cdn-icons-png.flaticon.com/512/4494/4494465.png">
-                </a>
-            </div>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanashi A.I. Covers</title>
+    <link rel="shortcut icon" href="assets/img/icone.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="js/script.js"></script>
+</head>
 
-        <main>
-            <img src="assets/img/banner.jpg" alt="banner">
-                <div>
-                    <table id="fileTable">
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Tamanho</th>
-                                <th class="mobile">Tipo</th>
-                                <th>Ações</th>
-                            </tr>
-                        </thead>
-                        <tbody id="fileList"></tbody>
-                    </table>
-                </div>
-        </main>
+<body>
+    <header>
+        <h3>Minhas Redes Sociais</h3>
+        <div>
+            <a href="https://www.youtube.com/@NanashiG" target="_blank">
+                <img width="20" height="20" src="https://cdn-icons-png.flaticon.com/512/4494/4494467.png">
+            </a>
+            <a href="https://www.instagram.com/nanashigc/" target="_blank">
+                <img width="20" height="20" src="https://cdn-icons-png.flaticon.com/512/4494/4494468.png">
+            </a>
+            <a href="https://twitter.com/shirounanashi" target="_blank">
+                <img width="20" height="20" src="https://cdn-icons-png.flaticon.com/512/4494/4494465.png">
+            </a>
+        </div>
+    </header>
 
-        <footer>
-            Developed by Hygor Braga
-        </footer>
-        
-    </body>
+    <main>
+        <img src="assets/img/banner.jpg" alt="banner">
+        <div class="input-button-container">
+            <input type="text" id="searchBox" placeholder="Buscar arquivos..." onkeyup="filterFiles()">
+            <button onclick="onSearchButtonClick()">Buscar</button>
+        </div>
+        <div>
+            <table id="fileTable">
+                <thead id="theaddo">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Tamanho</th>
+                        <th class="mobile">Tipo</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="fileList"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        Developed by Hygor Braga
+    </footer>
+
+</body>
+
 </html>
